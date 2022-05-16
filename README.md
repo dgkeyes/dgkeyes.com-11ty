@@ -1,59 +1,60 @@
-# YATAS - Yet Another Tailwind Apline Starter
+# Neat Starter
 
-<a href="https://yatas.netlify.app/" target="_blank">
-  <img alt="YATAS Logo" width="350" src="./src/img/logo.svg">
-</a>
+Starter Template for **N**etlify CMS, **E**leventy, **A**lpine JS & **T**ailwind CSS
 
-Minimal 11ty starter project that build css with the new [tailwindcss cli](https://github.com/tailwindlabs/tailwindcss/releases#all-new-improved-tailwind-cli) (tailwind 2.2) and [esbuild](https://esbuild.github.io/) for javascript.
+## Live Demo
 
-## [Demo](https://yatas.netlify.app/)
+[https://neat-starter.netlify.app/](https://neat-starter.netlify.app/)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/needbrainz/yatas)
+### Technologies used:
 
-## Stack
+- [Netlify CMS](https://www.netlifycms.org/)
+- [Eleventy](https://www.11ty.dev/)
+- [Alpine.js](https://github.com/alpinejs/alpine)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-* TailwindCSS v2
-* Apline.js v3
+| ![image](https://user-images.githubusercontent.com/1884712/93762662-a62e4700-fc2d-11ea-9b2c-fda9f503402b.png) |
+| ------------------------------------------------------------------------------------------------------------- |
 
-## Install
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/surjithctly/neat-starter&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
+
+## Getting Started
+
+Detailed instructions are available in my blog. [Check it out](https://blog.surjithctly.in/neat-stack-create-a-static-website-with-netlify-cms-eleventy-alpinejs-and-tailwindcss)
+
+### 1\. Clone this Repository
+
+```
+git clone https://github.com/surjithctly/neat-starter.git
+```
+
+### 2\. Navigate to the directory
+
+```
+cd neat-starter
+```
+
+### 3\. Install dependencies
 
 ```
 npm install
 ```
 
-## Local dev
+### 4\. Build the project to generate the first CSS
+
+This step is only required the very first time.
+
+```
+npm run build
+```
+
+### 5\. Run Eleventy
 
 ```
 npm run start
 ```
 
-## Build
+## Author
 
-Minified production build
-
-```
-npm run build 
-```
-
-## Assets versioning
-
-This starter includes a small js script to which can add a hash to your assets when building for production builds.
-The script will look for files to include a hash (based on the md5 of the built file content) eg: ```styles.734a7607648afdb.css``` instead of ```styles.css```.
-
-The entry point for matching regular file path to versionned path is generated as an 11ty global data object in ```_data/hash.json``` with the simple structure 
-```js
-{
-  'path/to/resource.css': 'path/to/resource.hash.css'
-}
-```
-
-In your 11ty template, you can then simply retrieve the versioned path from the array ```{{ hash['path/to/resource.css'] }}``` 
-
-If you want to add other assets to this generated data array, simply include the path in the ```assets``` const in the ```hash.js``` file in the root directory (files listed below are already included).
-
-```js
-const assets = [
-  'css/styles.css',
-  'js/scripts.js'
-];
-```
+Surjith S M ( [@surjithctly](https://surjithctly.in/) )

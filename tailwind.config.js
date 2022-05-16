@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./**/*.html"],
   theme: {
@@ -6,6 +8,9 @@ module.exports = {
     },
     extend: {
       colors: {},
+      fontFamily: {
+        'serif': ['Playfair Display', ...defaultTheme.fontFamily.serif],
+      },
     },
   },
   variants: {},

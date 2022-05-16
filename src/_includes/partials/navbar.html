@@ -6,10 +6,10 @@
     @click.away="isOpen = false"
   >
     <!--Logo etc-->
-    <div class="flex items-center w-24 h-24">
-      <a href="/"
-        ><img class="rounded-full" src="/static/img/david-keyes.jpg"
-      /></a>
+    <div class="flex items-center justify-center bg-black h-32 w-32 rounded-full">
+      <a href="/">
+        <span class="text-5xl font-serif text-white">DK</span>
+      </a>
     </div>
 
     <!--Toggle button (hidden on large screens)-->
@@ -54,7 +54,7 @@
         <li class="nav__item mr-3">
           <a
             @click="isOpen = false"
-            class="text-ml inline-block text-gray-500 no-underline hover:text-blue-500  border-blue-500 py-2 px-4"
+            class="text-lg inline-block text-gray-500 no-underline hover:text-gray-800  border-blue-500 py-2 px-4"
             href="{{ item.url }}"
             >{{ item.text }}</a
           >

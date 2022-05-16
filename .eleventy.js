@@ -17,20 +17,9 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+;
 
-  // Copy custom fonts folder
-  // https://stubborncode.com/posts/build-a-blog-with-eleventy-and-tailwindcss-part-3/#add-custom-fonts
-  module.exports = function (eleventyConfig) {
-    // Copy `css/fonts/` to `_site/css/fonts`
-    eleventyConfig.addPassthroughCopy("css/fonts");
-  };
-
-  const faviconPlugin = require("eleventy-favicon");
-
-  module.exports = function (eleventyConfig) {
-    eleventyConfig.addPlugin(faviconPlugin, options);
-  };
-  
+ 
 
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -52,6 +41,9 @@ module.exports = function (eleventyConfig) {
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+
+  // Copy `/fonts/` to `_site/fonts`
+  eleventyConfig.addPassthroughCopy("./src/fonts");
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {

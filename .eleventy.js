@@ -13,9 +13,24 @@ module.exports = function (eleventyConfig) {
   // human readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
+      "LLLL dd, yyyy"
     );
   });
+
+
+  // Copy custom fonts folder
+  // https://stubborncode.com/posts/build-a-blog-with-eleventy-and-tailwindcss-part-3/#add-custom-fonts
+  module.exports = function (eleventyConfig) {
+    // Copy `css/fonts/` to `_site/css/fonts`
+    eleventyConfig.addPassthroughCopy("css/fonts");
+  };
+
+  const faviconPlugin = require("eleventy-favicon");
+
+  module.exports = function (eleventyConfig) {
+    eleventyConfig.addPlugin(faviconPlugin, options);
+  };
+  
 
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);

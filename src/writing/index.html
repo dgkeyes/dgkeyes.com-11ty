@@ -16,7 +16,7 @@ layout: writing
                     {% endif %}
                 </a>
             </h2>
-            <p class="text-base leading-6 text-gray-500 mb-3">
+            <p class="text-base leading-6 text-gray-500 mb-3 font-sans">
                 <time>
                     {{ post.date | readableDate }}
                     by
@@ -31,7 +31,7 @@ layout: writing
             {% endif %}
 
             <p>
-                <a href="{{ post.url | url }}" class="text-blue-500 font-bold text-lg">
+                <a href="{{ post.url | url }}" class="text-blue-500 font-bold font-sans text-lg">
                     Read more →
                 </a>
             </p>

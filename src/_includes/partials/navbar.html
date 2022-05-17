@@ -6,11 +6,18 @@
     @click.away="isOpen = false"
   >
     <!--Logo etc-->
-    <div class="flex items-center justify-center -rotate-2">
-      <a href="/">
-        <span class="text-3xl font-bold text-gray-800">David Keyes</span>
+    <div class="flex items-center justify-center">
+      <a href="/writing/">
+        <span
+          class="text-lg inline-block text-gray-500 no-underline hover:text-gray-800 py-2 px-4"
+          >Writing</span
+        >
       </a>
+
+      <button type="button" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Button text</button>
     </div>
+
+    
 
     <!--Toggle button (hidden on large screens)-->
     <button
@@ -54,7 +61,7 @@
         <li class="nav__item mr-3">
           <a
             @click="isOpen = false"
-            class="text-lg inline-block text-gray-500 no-underline hover:text-gray-800   py-2 px-4"
+            class="text-lg inline-block text-gray-500 no-underline hover:text-gray-800 py-2 px-4"
             href="{{ item.url }}"
             >{{ item.text }}</a
           >

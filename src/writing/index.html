@@ -20,7 +20,7 @@ layout: writing
                 <time>
                     {{ post.date | readableDate }}
                     by
-                    <a>{{ post.data.author }}</a>
+                    <a class="no-underline">{{ post.data.author }}</a>
 
                 </time>
             </p>
@@ -31,7 +31,7 @@ layout: writing
             {% endif %}
 
             <p>
-                <a href="{{ post.url | url }}" class="font-bold font-sans text-lg">
+                <a href="{{ post.url | url }}" class="font-bold font-sans text-lg no-underline">
                     Read more →
                 </a>
             </p>

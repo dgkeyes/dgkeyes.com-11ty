@@ -20,7 +20,7 @@ h3 {
 }
 
 p {
-  @apply font-serif;
+  @apply font-serif text-gray-800;
 }
 
 .dk-description a {

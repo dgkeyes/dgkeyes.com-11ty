@@ -4,21 +4,20 @@ title: David Keyes
 path: home
 ---
 
-
-<div
-  class="container mx-auto px-8 md:px-0 lg:h-screen flex flex-col justify-center items-center"
->
-  
-  <img
-    class="rounded-full h-64 w-64 shadow-md mb-8"
-    src="/static/img/david-keyes.jpg"
-  />
-  
+<div class="max-w-3xl mx-auto px-8">
+  <div
+    class="inline-block px-4 pt-6 pb-2 uppercase font-semibold text-3xl tracking-wider bg-black text-white"
+  >
+    David Keyes
+  </div>
 
   
-  <h1 class="font-bold mb-12 hidden">Howdy, I'm David.</h1>
 
-  <div class="prose-xl dk-description max-w-xl">
+  <img class="my-12" src="/static/img/david-keyes-large.jpg" />
+
+  <h2 class="mb-4">Howdy, I'm David</h2>
+
+  <div class="prose-xl">
     <p>
       You probably know me as the founder of
       <a href="https://rfortherestofus.com">R for the Rest of Us.</a>
@@ -33,16 +32,22 @@ path: home
     </p>
 
     <p>
-      I'm using this site to
-      <a href="writing">document my work running R for the Rest of Us.</a>
+      I'm using this site to document my work running R for the Rest of Us.
     </p>
     <p></p>
+
+
+    <h2 class="mb-0">Writing</h2>
+
+    {% include "./_includes/partials/posts.html" %}
+
+    <h2 class="mb-4">Contact</h2>
+
     <p>
       Send me an <a href="mailto:david@rfortherestofus.com">email</a>, find me
       on <a href="https://twitter.com/dgkeyes/">Twitter</a>, or connect on
       <a href="https://www.linkedin.com/in/dgkeyes/">LinkedIn</a>.
     </p>
-  </div>
 
-  <!-- {% include "./_includes/partials/content.html" %} -->
+  </div>
 </div>

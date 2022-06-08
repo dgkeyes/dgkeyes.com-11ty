@@ -23,10 +23,11 @@
       defer
     ></script>
   </head>
-  <body>
-    {% include "./partials/navbar.html" %} {{ content | safe }} {% include
-    "./partials/footer.html" %}
-
+  <body class="bg-[#f2f0eb]">
+    
+    {{ content | safe }} 
+    
+    
     <script src="/static/js/alpine.js"></script>
 
     {% if path == "home" %}

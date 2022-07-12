@@ -3,6 +3,7 @@ title: How to Make Yourself Stand Out from 250 Other Internship Applicants
 description: "First step: always submit a cover letter"
 date: 2022-05-16
 author: David Keyes
+permalink: "{{ page.fileSlug }}/"
 ---
 
 When I announced the [R for the Rest of Us internship position](https://rfortherestofus.com/internship), I expected to receive maybe 20 or 30 applicants. Instead, I got 250. Yes, 250 applicants.

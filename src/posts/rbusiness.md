@@ -10,7 +10,7 @@ Thanks for your interest in my rstudio::conf 2022 talk!
 
 The slides will be available here and I'll post my video recording once RStudio puts it up on YouTube.
 
-<!-- <a href="/static/misc/rbusiness-slides.pdf">Download slides</a> -->
+<a href="/static/misc/rbusiness.pdf">Download slides</a>
 
 ## Resources
 

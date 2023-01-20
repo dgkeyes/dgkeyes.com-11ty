@@ -23,11 +23,16 @@
       defer
     ></script>
   </head>
-  <body class="bg-[#f2f0eb]">
-    
-    {{ content | safe }} 
-    
-    
+  <body class="bg-white">
+    <div class="max-w-3xl mx-auto px-8 mb-16">
+      <img
+        class="h-24 w-24 my-12 rounded-full"
+        src="/static/img/david-keyes-square.jpg"
+      />
+
+      {{ content | safe }}
+    </div>
+
     <script src="/static/js/alpine.js"></script>
 
     {% if path == "home" %}

@@ -3,7 +3,7 @@
 
     {% for post in postslist | reverse %}
         <article class="my-8 bg-white">
-            <p class="font-normal text-lg tracking-tighter text-gray-900 my-2">
+            <p class="font-normal text-lg text-gray-900 my-2">
                 <a class="font-light" href="{{ post.url | url }}">
                     {% if post.data.title %}
                         {{ post.data.title }}
